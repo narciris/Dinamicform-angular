@@ -16,7 +16,7 @@
       
       <!-- Campo de texto, email, número -->
       <input 
-        *ngIf="field.type === 'text' || field.type === 'email' || field.type === 'number'"
+        *ngIf="field.type === 'text' || field.type === 'email' || field.type === 'number'|| field.type === 'password'"
         [type]="field.type"
         [id]="field.name"
         [formControlName]="field.name"
@@ -52,7 +52,7 @@
     </div>
   </form>
   
-  <!-- Vista previa de los datos (opcional) -->
+  <!-- Vista previa de los datos  -->
   <div *ngIf="submitted && dynamicForm?.valid" class="form-preview">
     <h3>Datos enviados:</h3>
     <pre>{{ dynamicForm.value | json }}</pre>

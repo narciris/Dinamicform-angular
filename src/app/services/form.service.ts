@@ -52,6 +52,13 @@ export class FormService {
           { label: 'Other', value: 'other' }
         ],
         placeholder: 'Select your gender'
+      },
+      {
+        name: 'reason',
+        label: 'reason',
+        type: 'password',
+        required: false,
+        placeholder: 'escribe tu razon'
       }
     ];
 

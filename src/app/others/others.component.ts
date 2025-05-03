@@ -20,7 +20,7 @@ export class OthersComponent implements OnInit {
     this.dynamicForm = this.fb.group({});
   }
   ngOnInit(): void {
-    this.service.getFormFieldsFromJson().subscribe({
+    this.service.getFormConfig().subscribe({
       next: (config) => {
         this.formFields = config;
         this.createForm();

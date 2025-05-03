@@ -10,7 +10,7 @@ export interface FormFieldBase {
   
   // Interfaz para campos de texto (text, email, number, etc.)
   export interface TextField extends FormFieldBase {
-    type: 'text' | 'email' | 'number';
+    type: 'text' | 'email' | 'number'| 'password';
   }
   
   // Interfaz para las opciones de los campos select
